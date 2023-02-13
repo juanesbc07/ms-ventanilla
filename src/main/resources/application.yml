@@ -1,0 +1,18 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /msretobackend
+
+spring:
+  main:
+    allow-circular_references: true
+  application:
+    name: ms-reto-backend
+  datasource:
+    jdbc-url: jdbc:oracle:thin:@localhost:1521/orcl
+    username: ESTUDIANTE
+    password: '123'
+
+    hikari:
+      maximum-pool-size: 20
+      connection-timeout: 70000
